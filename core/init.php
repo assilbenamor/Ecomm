@@ -4,7 +4,7 @@ if (mysqli_connect_errno()) {
 	echo 'Database connection ! details :' . mysqli.connect_error();
 	die();
 }
-require_once '../config.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/ecomm/config.php';
 require_once BASEURL.'helpers/helpers.php';
 
  ?>
