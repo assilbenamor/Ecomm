@@ -1,6 +1,6 @@
 <nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
-				<a href="index.php" class="navbar-brand">Lilos boutique Admin</a>
+				<a href="/ecomm/admin/index.php" class="navbar-brand">Lilos boutique Admin</a>
 				<ul class="nav navbar-nav">
 				<li>
 					<a href="brands.php">

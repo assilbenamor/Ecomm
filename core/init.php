@@ -4,8 +4,8 @@ if (mysqli_connect_errno()) {
 	echo 'Database connection ! details :' . mysqli.connect_error();
 	die();
 }
-
-define('BASEURL','/ecomm/');
+require_once '../config.php';
+require_once BASEURL.'helpers/helpers.php';
 
  ?>
 
