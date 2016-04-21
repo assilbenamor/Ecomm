@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0095)http://127.0.0.1/phpmyadmin/navigation.php?token=080907c314584056dfc44591c477a527&db=mydatabase -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="http://127.0.0.1/phpmyadmin/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="http://127.0.0.1/phpmyadmin/favicon.ico" type="image/x-icon">
+    <title>phpMyAdmin</title>
+    
+    <!--<base target="frame_content">--><base href="." target="frame_content">
+    <link rel="stylesheet" type="text/css" href="./phpmyadmin.css.php">
+    <script src="./jquery-1.6.2.js" type="text/javascript"></script>
+<script src="./jquery-ui-1.8.16.custom.js" type="text/javascript"></script>
+<script src="./jquery.qtip-1.0.0-rc3.js" type="text/javascript"></script>
+<script src="./navigation.js" type="text/javascript"></script>
+<script src="./functions.js" type="text/javascript"></script>
+<script src="./messages.php" type="text/javascript"></script>
+<script src="./get_image.js.php" type="text/javascript"></script>
+    <script type="text/javascript">
+    // <![CDATA[
+    // INIT PMA_setFrameSize
+    var onloadCnt = 0;
+    var onLoadHandler = window.onload;
+    var resizeHandler = window.onresize;
+    window.document.onresize  = resizeHandler;
+    window.onload = function() {
+        if (onloadCnt == 0) {
+            if (typeof(onLoadHandler) == "function") {
+                onLoadHandler();
+            }
+            if (typeof(PMA_setFrameSize) != 'undefined' && typeof(PMA_setFrameSize) == 'function') {
+                PMA_setFrameSize();
+            }
+            onloadCnt++;
+        }
+    };
+    window.onresize = function() {
+        if (typeof(resizeHandler) == "function") {
+            resizeHandler();
+        }
+        if (typeof(PMA_saveFrameSize) != 'undefined' && typeof(PMA_saveFrameSize) == 'function') {
+            PMA_saveFrameSize();
+        }
+    };
+    // ]]>
+    </script>
+        <!--[if IE 6]>
+    <style type="text/css">
+    /* <![CDATA[ */
+    html {
+        overflow-y: scroll;
+    }
+    /* ]]> */
+    </style>
+    <![endif]-->
+<link href="chrome-extension://lnkdbjbjpnpjeciipoaflmpcddinpjjp/mytube.css" rel="stylesheet" type="text/css"><script src="chrome-extension://lnkdbjbjpnpjeciipoaflmpcddinpjjp/mutationObserver.js"></script><script src="chrome-extension://lnkdbjbjpnpjeciipoaflmpcddinpjjp/mytube.js"></script></head>
+
+<body id="body_leftFrame">
+<div id="pmalogo">
+<a href="http://127.0.0.1/phpmyadmin/main.php?token=080907c314584056dfc44591c477a527" target="frame_content"><img src="./logo_left.png" alt="phpMyAdmin" id="imgpmalogo"></a>
+</div>
+<div id="leftframelinks">
+<a href="http://127.0.0.1/phpmyadmin/main.php?token=080907c314584056dfc44591c477a527" title="Accueil"><img src="./dot.gif" title="Accueil" alt="Accueil" class="icon ic_b_home"></a>
+<a href="http://127.0.0.1/phpmyadmin/querywindow.php?db=mydatabase&amp;token=080907c314584056dfc44591c477a527&amp;no_js=true" title="Fenêtre de requête" onclick="if (window.parent.open_querywindow()) return false;"><img src="./dot.gif" title="Fenêtre de requête" alt="Fenêtre de requête" class="icon ic_b_selboard"></a>
+    <a href="http://127.0.0.1/phpmyadmin/Documentation.html" target="documentation" title="Documentation de phpMyAdmin"><img src="./dot.gif" title="Documentation de phpMyAdmin" alt="Documentation de phpMyAdmin" class="icon ic_b_docs"></a><a href="http://127.0.0.1/phpmyadmin/url.php?url=http%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F5.5%2Fen%2Findex.html&amp;token=080907c314584056dfc44591c477a527" target="mysql_doc"><img src="./dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_sqlhelp"></a>
+<a href="http://127.0.0.1/phpmyadmin/navigation.php??uniqid=5718a6556e5f0&amp;db=mydatabase&amp;token=080907c314584056dfc44591c477a527" title="Actualiser" target="frame_navigation"><img src="./dot.gif" title="Actualiser" alt="Actualiser" class="icon ic_s_reload"></a></div>
+<div id="recentTableList">
+<form method="post" action="http://127.0.0.1/phpmyadmin/index.php" target="_parent">
+<input type="hidden" name="token" value="080907c314584056dfc44591c477a527">
+<input type="hidden" name="goto" id="LeftDefaultTabTable" value="tbl_structure.php"><select name="selected_recent_table" id="recentTable"><option value="">(Tables récentes) ...</option><option value="{&quot;db&quot;:&quot;mydatabase&quot;,&quot;table&quot;:&quot;products&quot;}">`mydatabase`.`products`</option></select><noscript>
+&lt;input type="submit" name="Go" value="Exécuter" /&gt;
+</noscript>
+</form>
+</div>
+
+    <div id="databaseList">
+    <form method="post" action="http://127.0.0.1/phpmyadmin/index.php" target="_parent" id="left">
+    <input type="hidden" name="token" value="080907c314584056dfc44591c477a527">
+<select name="db" id="lightm_db" xml:lang="en" dir="ltr" onchange="if (this.value != &#39;&#39;) window.parent.openDb(this.value);">
+<option value="" dir="ltr">(Bases de données) ...</option>
+<option value="gestionstock" title="">gestionstock</option>
+<option value="information_schema" title="">information_schema</option>
+<option value="mydatabase" title="" selected="selected">mydatabase</option>
+<option value="mysql" title="">mysql</option>
+<option value="performance_schema" title="">performance_schema</option>
+<option value="test" title="">test</option>
+</select>
+<noscript>
+&lt;input type="submit" name="Go" value="Exécuter" /&gt;
+</noscript>
+</form>
+</div>
+
+<div id="left_tableList">
+<ul id="subel0"><li>
+<a class="tableicon" title="Structure:  (1 Lignes)" id="quick_mydatabase.brand" href="http://127.0.0.1/phpmyadmin/tbl_structure.php?db=mydatabase&amp;token=080907c314584056dfc44591c477a527&amp;table=brand&amp;goto=tbl_structure.php"><img src="./dot.gif" title="Structure" alt="Structure" id="icon_mydatabase.brand" class="icon ic_b_browse"></a><a href="http://127.0.0.1/phpmyadmin/sql.php?db=mydatabase&amp;token=080907c314584056dfc44591c477a527&amp;table=brand&amp;pos=0" title="Afficher:  (1 Lignes)" id="mydatabase.brand">brand</a></li>
+<li>
+<a class="tableicon" title="Structure:  (17 Lignes)" id="quick_mydatabase.categories" href="http://127.0.0.1/phpmyadmin/tbl_structure.php?db=mydatabase&amp;token=080907c314584056dfc44591c477a527&amp;table=categories&amp;goto=tbl_structure.php"><img src="./dot.gif" title="Structure" alt="Structure" id="icon_mydatabase.categories" class="icon ic_b_browse"></a><a href="http://127.0.0.1/phpmyadmin/sql.php?db=mydatabase&amp;token=080907c314584056dfc44591c477a527&amp;table=categories&amp;pos=0" title="Afficher:  (17 Lignes)" id="mydatabase.categories">categories</a></li>
+<li class="marked">
+<a class="tableicon" title="Structure:  (6)" id="quick_mydatabase.products" href="http://127.0.0.1/phpmyadmin/tbl_structure.php?db=mydatabase&amp;token=080907c314584056dfc44591c477a527&amp;table=products&amp;goto=tbl_structure.php"><img src="./dot.gif" title="Structure" alt="Structure" id="icon_mydatabase.products" class="icon ic_b_browse"></a><a href="http://127.0.0.1/phpmyadmin/sql.php?db=mydatabase&amp;token=080907c314584056dfc44591c477a527&amp;table=products&amp;pos=0" title="Afficher:  (6)" id="mydatabase.products">products</a></li>
+</ul><ul id="newtable"><li><a target="frame_content" href="http://127.0.0.1/phpmyadmin/tbl_create.php?db=mydatabase&amp;token=080907c314584056dfc44591c477a527" class="ajax"><img src="./dot.gif" title="Nouvelle table" alt="Nouvelle table" id="icon_newtable" class="icon ic_b_snewtbl">Nouvelle table</a></li></ul></div>
+<mytubeelement id="myTubeRelayElementToPage" event="preferencesUpdated" data="{&quot;bundle&quot;:{&quot;label_delimitor&quot;:&quot;:&quot;,&quot;percentage&quot;:&quot;%&quot;,&quot;smart_buffer&quot;:&quot;Smart Buffer&quot;,&quot;start_playing_when_buffered&quot;:&quot;Start playing when buffered&quot;,&quot;sound&quot;:&quot;Sound&quot;,&quot;desktop_notification&quot;:&quot;Desktop Notification&quot;,&quot;continuation_on_next_line&quot;:&quot;-&quot;,&quot;loop&quot;:&quot;Loop&quot;,&quot;only_notify&quot;:&quot;Only Notify&quot;,&quot;estimated_time&quot;:&quot;Estimated Time&quot;,&quot;global_preferences&quot;:&quot;Global Preferences&quot;,&quot;no_notification_supported_on_your_browser&quot;:&quot;No notification style supported on your browser version&quot;,&quot;video_buffered&quot;:&quot;Video Buffered&quot;,&quot;buffered&quot;:&quot;Buffered&quot;,&quot;hyphen&quot;:&quot;-&quot;,&quot;buffered_message&quot;:&quot;The video has been buffered as requested and is ready to play.&quot;,&quot;not_supported&quot;:&quot;Not Supported&quot;,&quot;on&quot;:&quot;On&quot;,&quot;off&quot;:&quot;Off&quot;,&quot;click_to_enable_for_this_site&quot;:&quot;Click to enable for this site&quot;,&quot;desktop_notification_denied&quot;:&quot;You have denied permission for desktop notification for this site&quot;,&quot;notification_status_delimitor&quot;:&quot;;&quot;,&quot;error&quot;:&quot;Error&quot;,&quot;adblock_interferance_message&quot;:&quot;Adblock (or similar extension) is known to interfere with SmartVideo. Please add this url to adblock whitelist.&quot;,&quot;calculating&quot;:&quot;Calculating&quot;,&quot;waiting&quot;:&quot;Waiting&quot;,&quot;will_start_buffering_when_initialized&quot;:&quot;Will start buffering when initialized&quot;,&quot;will_start_playing_when_initialized&quot;:&quot;Will start playing when initialized&quot;,&quot;completed&quot;:&quot;Completed&quot;,&quot;buffering_stalled&quot;:&quot;Buffering is stalled. Will stop.&quot;,&quot;stopped&quot;:&quot;Stopped&quot;,&quot;hr&quot;:&quot;Hr&quot;,&quot;min&quot;:&quot;Min&quot;,&quot;sec&quot;:&quot;Sec&quot;,&quot;any_moment&quot;:&quot;Any Moment&quot;,&quot;popup_donate_to&quot;:&quot;Donate to&quot;,&quot;extension_id&quot;:&quot;lnkdbjbjpnpjeciipoaflmpcddinpjjp&quot;},&quot;prefs&quot;:{&quot;desktopNotification&quot;:true,&quot;soundNotification&quot;:true,&quot;logLevel&quot;:0,&quot;enable&quot;:true,&quot;loop&quot;:false,&quot;hidePopup&quot;:false,&quot;autoPlay&quot;:false,&quot;autoBuffer&quot;:false,&quot;autoPlayOnBuffer&quot;:false,&quot;autoPlayOnBufferPercentage&quot;:42,&quot;autoPlayOnSmartBuffer&quot;:true,&quot;quality&quot;:&quot;default&quot;,&quot;fshd&quot;:false,&quot;onlyNotification&quot;:false,&quot;enableFullScreen&quot;:true,&quot;saveBandwidth&quot;:false,&quot;hideAnnotations&quot;:false,&quot;turnOffPagedBuffering&quot;:false}}"></mytubeelement><mytubeelement id="myTubeRelayElementToTab" event="relayPrefs" data="{&quot;loadBundle&quot;:true}"></mytubeelement></body></html>

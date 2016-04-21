@@ -1,0 +1,402 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0109)http://127.0.0.1/phpmyadmin/sql.php?db=mydatabase&token=080907c314584056dfc44591c477a527&table=products&pos=0 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://127.0.0.1/phpmyadmin/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="http://127.0.0.1/phpmyadmin/favicon.ico" type="image/x-icon">
+    <title>phpMyAdmin</title>
+    <link rel="stylesheet" type="text/css" href="./phpmyadmin.css(1).php">
+    <link rel="stylesheet" type="text/css" href="./print.css" media="print">
+    <link rel="stylesheet" type="text/css" href="./jquery-ui-1.8.16.custom.css">
+    <meta name="robots" content="noindex,nofollow">
+<script src="./cross_framing_protection.js" type="text/javascript"></script>
+<script src="./jquery-1.6.2.js" type="text/javascript"></script>
+<script src="./jquery-ui-1.8.16.custom.js" type="text/javascript"></script>
+<script src="./update-location.js" type="text/javascript"></script>
+<script src="./timepicker.js" type="text/javascript"></script>
+<script src="./tbl_change.js" type="text/javascript"></script>
+<script src="./tbl_structure.js" type="text/javascript"></script><link href="chrome-extension://lnkdbjbjpnpjeciipoaflmpcddinpjjp/mytube.css" rel="stylesheet" type="text/css">
+<script src="./indexes.js" type="text/javascript"></script>
+<script src="./gis_data_editor.js" type="text/javascript"></script>
+<script src="./codemirror.js" type="text/javascript"></script>
+<script src="./mysql.js" type="text/javascript"></script>
+<script src="./functions.js" type="text/javascript"></script>
+<script src="./makegrid.js" type="text/javascript"></script>
+<script src="./sql.js" type="text/javascript"></script>
+<script src="./config.js" type="text/javascript"></script>
+<script src="./jquery.qtip-1.0.0-rc3.js" type="text/javascript"></script>
+<script src="./messages(1).php" type="text/javascript"></script>
+<script src="./get_image.js.php" type="text/javascript"></script>
+<script type="text/javascript">
+// <![CDATA[
+if (typeof(parent.document) != 'undefined' && typeof(parent.document) != 'unknown'
+    && typeof(parent.document.title) == 'string') {
+    parent.document.title = '127.0.0.1 / localhost / mydatabase / products | phpMyAdmin 3.5.4';
+}
+// ]]>
+</script>
+        <meta name="OBGZip" content="true">
+                <!--[if IE 6]>
+        <style type="text/css">
+        /* <![CDATA[ */
+        html {
+            overflow-y: scroll;
+        }
+        /* ]]> */
+        </style>
+        <![endif]-->
+    <script src="chrome-extension://lnkdbjbjpnpjeciipoaflmpcddinpjjp/mutationObserver.js"></script><script src="chrome-extension://lnkdbjbjpnpjeciipoaflmpcddinpjjp/mytube.js"></script></head>
+
+    <body style="padding-top: 58px; cursor: inherit;"><div id="loading_parent"></div>
+            <div id="prefs_autoload" class="notice" style="display:none">
+        <form action="http://127.0.0.1/phpmyadmin/prefs_manage.php" method="post">
+            <input type="hidden" name="token" value="080907c314584056dfc44591c477a527">
+            <input type="hidden" name="json" value="">
+            <input type="hidden" name="submit_import" value="1">
+            <input type="hidden" name="return_url" value="sql.php?db=mydatabase&amp;token=080907c314584056dfc44591c477a527&amp;table=products&amp;pos=0">
+            Votre navigateur contient une configuration phpMyAdmin pour ce domaine. Voulez-vous l'importer dans la session courante ?            <br>
+            <a href="http://127.0.0.1/phpmyadmin/sql.php?db=mydatabase&amp;token=080907c314584056dfc44591c477a527&amp;table=products&amp;pos=0#yes">Oui</a> / <a href="http://127.0.0.1/phpmyadmin/sql.php?db=mydatabase&amp;token=080907c314584056dfc44591c477a527&amp;table=products&amp;pos=0#no">Non</a>
+        </form>
+    </div>
+    <div id="floating_menubar" style="position: fixed; top: 0px; left: 0px; width: 100%; z-index: 500;"><div id="serverinfo">
+<img src="./dot.gif" title="" alt="" class="icon ic_s_host item">
+<a href="http://127.0.0.1/phpmyadmin/main.php?token=080907c314584056dfc44591c477a527" class="item">localhost</a>
+<span class="separator item">&nbsp;»</span>
+<img src="./dot.gif" title="" alt="" class="icon ic_s_db item">
+<a href="http://127.0.0.1/phpmyadmin/db_structure.php?db=mydatabase&amp;token=080907c314584056dfc44591c477a527" class="item">mydatabase</a>
+<span class="separator item">&nbsp;»</span>
+<img src="./dot.gif" title="" alt="" class="icon ic_s_tbl item">
+<a href="http://127.0.0.1/phpmyadmin/sql.php?db=mydatabase&amp;table=products&amp;token=080907c314584056dfc44591c477a527" class="item">products</a>
+<span class="hide" id="update_recent_tables"></span><div class="clearfloat"></div></div><div id="topmenucontainer" class="menucontainer"><ul id="topmenu"><li class="active"><a class="tabactive" href="http://127.0.0.1/phpmyadmin/sql.php?db=mydatabase&amp;table=products&amp;token=080907c314584056dfc44591c477a527&amp;pos=0"><img src="./dot.gif" title="" alt="" class="icon ic_b_browse">Afficher</a></li><li><a class="tab" href="http://127.0.0.1/phpmyadmin/tbl_structure.php?db=mydatabase&amp;table=products&amp;token=080907c314584056dfc44591c477a527"><img src="./dot.gif" title="" alt="" class="icon ic_b_props">Structure</a></li><li><a class="tab" href="http://127.0.0.1/phpmyadmin/tbl_sql.php?db=mydatabase&amp;table=products&amp;token=080907c314584056dfc44591c477a527"><img src="./dot.gif" title="" alt="" class="icon ic_b_sql">SQL</a></li><li><a class="tab" href="http://127.0.0.1/phpmyadmin/tbl_select.php?db=mydatabase&amp;table=products&amp;token=080907c314584056dfc44591c477a527"><img src="./dot.gif" title="" alt="" class="icon ic_b_search">Rechercher</a></li><li><a class="tab" href="http://127.0.0.1/phpmyadmin/tbl_change.php?db=mydatabase&amp;table=products&amp;token=080907c314584056dfc44591c477a527"><img src="./dot.gif" title="" alt="" class="icon ic_b_insrow">Insérer</a></li><li><a class="tab" href="http://127.0.0.1/phpmyadmin/tbl_export.php?db=mydatabase&amp;table=products&amp;token=080907c314584056dfc44591c477a527&amp;single_table=true"><img src="./dot.gif" title="" alt="" class="icon ic_b_tblexport">Exporter</a></li><li><a class="tab" href="http://127.0.0.1/phpmyadmin/tbl_import.php?db=mydatabase&amp;table=products&amp;token=080907c314584056dfc44591c477a527"><img src="./dot.gif" title="" alt="" class="icon ic_b_tblimport">Importer</a></li><li><a class="tab" href="http://127.0.0.1/phpmyadmin/tbl_operations.php?db=mydatabase&amp;table=products&amp;token=080907c314584056dfc44591c477a527"><img src="./dot.gif" title="" alt="" class="icon ic_b_tblops">Opérations</a></li><li><a class="tab" href="http://127.0.0.1/phpmyadmin/tbl_triggers.php?db=mydatabase&amp;table=products&amp;token=080907c314584056dfc44591c477a527"><img src="./dot.gif" title="" alt="" class="icon ic_b_triggers">Déclencheurs</a></li><li class="submenu"><a href="http://127.0.0.1/phpmyadmin/sql.php?db=mydatabase&amp;token=080907c314584056dfc44591c477a527&amp;table=products&amp;pos=0#" class="tab"><img alt="" title="" src="./dot.gif" class="icon ic_b_more">plus</a><ul class="notonly"></ul></li></ul>
+<div class="clearfloat"></div></div></div>
+
+<div id="sqlqueryresults" class="ajax">
+
+<div id="result_query" align="">
+<div class="success">1 ligne affectée.</div><code class="sql"><span class="syntax"><span class="inner_sql"><a href="http://127.0.0.1/phpmyadmin/url.php?url=http%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F5.5%2Fen%2Fupdate.html&amp;token=080907c314584056dfc44591c477a527" target="mysql_doc"><span class="syntax_alpha syntax_alpha_reservedWord">UPDATE</span></a>  <span class="syntax_quote syntax_quote_backtick">`mydatabase`</span><span class="syntax_punct syntax_punct_qualifier">.</span><span class="syntax_quote syntax_quote_backtick">`products`</span>  <a href="http://127.0.0.1/phpmyadmin/url.php?url=http%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F5.5%2Fen%2Fset.html&amp;token=080907c314584056dfc44591c477a527" target="mysql_doc"><span class="syntax_alpha syntax_alpha_reservedWord">SET</span></a>  <span class="syntax_quote syntax_quote_backtick">`image`</span>  <a href="http://127.0.0.1/phpmyadmin/url.php?url=http%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F5.5%2Fen%2Fcomparison-operators.html%23operator_equal&amp;token=080907c314584056dfc44591c477a527" target="mysql_doc"><span class="syntax_punct">=</span></a>  <span class="syntax_quote syntax_quote_single">'/ecomm/images/products/men1.png'</span> <span class="syntax_alpha syntax_alpha_reservedWord">WHERE</span>  <span class="syntax_quote syntax_quote_backtick">`products`</span><span class="syntax_punct syntax_punct_qualifier">.</span><span class="syntax_quote syntax_quote_backtick">`id`</span>  <a href="http://127.0.0.1/phpmyadmin/url.php?url=http%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F5.5%2Fen%2Fcomparison-operators.html%23operator_equal&amp;token=080907c314584056dfc44591c477a527" target="mysql_doc"><span class="syntax_punct">=</span></a><span class="syntax_digit syntax_digit_integer">7</span><span class="syntax_punct syntax_punct_queryend">;</span><br><br></span></span></code><div class="tools"><form action="http://127.0.0.1/phpmyadmin/sql.php" method="post"><input type="hidden" name="db" value="mydatabase"><input type="hidden" name="table" value="products"><input type="hidden" name="token" value="080907c314584056dfc44591c477a527"><input type="hidden" name="sql_query" value="UPDATE `mydatabase`.`products` SET `image` = &#39;/ecomm/images/products/men1.png&#39; WHERE `products`.`id` = 7;"></form> [
+<a href="http://127.0.0.1/phpmyadmin/tbl_sql.php?db=mydatabase&amp;table=products&amp;sql_query=UPDATE+%60mydatabase%60.%60products%60+SET+%60image%60+%3D+%27%2Fecomm%2Fimages%2Fproducts%2Fmen1.png%27+WHERE+%60products%60.%60id%60+%3D+7%3B&amp;show_query=1&amp;token=080907c314584056dfc44591c477a527#querybox" onclick="window.parent.focus_querywindow(&#39;UPDATE `mydatabase`.`products` SET `image` = \&#39;/ecomm/images/products/men1.png\&#39; WHERE `products`.`id` = 7;&#39;); return false;">Modifier</a>
+] [
+<a href="http://127.0.0.1/phpmyadmin/import.php?db=mydatabase&amp;table=products&amp;sql_query=UPDATE+%60mydatabase%60.%60products%60+SET+%60image%60+%3D+%27%2Fecomm%2Fimages%2Fproducts%2Fmen1.png%27+WHERE+%60products%60.%60id%60+%3D+7%3B&amp;show_query=1&amp;show_as_php=1&amp;token=080907c314584056dfc44591c477a527">Créer source PHP</a>
+]</div></div>
+<script type="text/javascript">
+//<![CDATA[
+if (window.parent.updateTableTitle) window.parent.updateTableTitle('mydatabase.products', ' (6)');
+//]]>
+</script>
+<br class="clearfloat">
+<!-- Navigation bar -->
+<table border="0" cellpadding="0" cellspacing="0" class="navigation">
+<tbody><tr>
+    <td class="navigation_separator"></td>
+        <td>
+        <div class="save_edited hide" style="display: none;">
+            <input type="submit" value="Sauvegarder les données modifiées">
+            <div class="navigation_separator">|</div>
+        </div>
+    </td>
+    <td>
+        <div class="restore_column hide" style="display: none;">
+            <input type="submit" value="Restaurer l&#39;ordre des colonnes">
+            <div class="navigation_separator">|</div>
+        </div>
+    </td>
+
+    <td class="navigation_goto">
+        <form action="http://127.0.0.1/phpmyadmin/sql.php" method="post" onsubmit="return (checkFormElementInRange(this, &#39;session_max_rows&#39;, &#39;%d n\&#39;est pas un numéro de ligne valable.&#39;, 1) &amp;&amp; checkFormElementInRange(this, &#39;pos&#39;, &#39;%d n\&#39;est pas un numéro de ligne valable.&#39;, 0-1))">
+            <input type="hidden" name="db" value="mydatabase"><input type="hidden" name="table" value="products"><input type="hidden" name="token" value="080907c314584056dfc44591c477a527">            <input type="hidden" name="sql_query" value="SELECT * FROM `products`">
+            <input type="hidden" name="goto" value="tbl_structure.php">
+            <input type="submit" name="navig" class="ajax" value="Afficher :">
+            Ligne de départ: 
+            <input type="text" name="pos" size="3" value="0" class="textfield" onfocus="this.select()">
+            Nombre de lignes: 
+            <input type="text" name="session_max_rows" size="3" value="30" class="textfield" onfocus="this.select()">
+        En-têtes à chaque <input type="text" size="3" name="repeat_cells" value="100" class="textfield"> ligne
+        </form>
+    </td>
+    <td class="navigation_separator"></td>
+</tr>
+</tbody></table>
+
+    
+<form action="http://127.0.0.1/phpmyadmin/sql.php" method="post">
+<input type="hidden" name="db" value="mydatabase"><input type="hidden" name="table" value="products"><input type="hidden" name="token" value="080907c314584056dfc44591c477a527">Trier sur l'index: <select name="sql_query" class="autosubmit">
+<option value="SELECT * FROM `products`
+ ORDER BY `id` ASC">PRIMARY (Croissant)</option><option value="SELECT * FROM `products`
+ ORDER BY `id` DESC">PRIMARY (Décroissant)</option><option value="SELECT * FROM `products`" selected="selected">Aucune</option></select>
+<noscript>&lt;input type="submit" value="Exécuter" /&gt;</noscript></form>
+<input id="save_cells_at_once" type="hidden" value=""><div class="common_hidden_inputs"><input type="hidden" name="db" value="mydatabase"><input type="hidden" name="table" value="products"><input type="hidden" name="token" value="080907c314584056dfc44591c477a527"></div><input id="table_create_time" type="hidden" value="2016-04-20 13:57:22"><form method="post" action="http://127.0.0.1/phpmyadmin/sql.php" name="displayOptionsForm" id="displayOptionsForm" class="ajax"><input type="hidden" name="db" value="mydatabase"><input type="hidden" name="table" value="products"><input type="hidden" name="sql_query" value="SELECT * FROM `products`"><input type="hidden" name="goto" value="tbl_structure.php"><input type="hidden" name="display_options_form" value="1"><input type="hidden" name="token" value="080907c314584056dfc44591c477a527"><br><a href="http://127.0.0.1/phpmyadmin/sql.php?db=mydatabase&amp;token=080907c314584056dfc44591c477a527&amp;table=products&amp;pos=0#displayoptions"><span>+ </span>Options</a><div class="slide-wrapper" style="display: none;"><div id="displayoptions" style="display: none; overflow:auto;" class="pma_auto_slider slider_init_done" title="Options">
+    <fieldset><div class="formelement"><input type="radio" name="display_text" id="display_text_P" value="P" checked="checked">
+<label for="display_text_P">Textes réduits</label><br>
+<input type="radio" name="display_text" id="display_text_F" value="F">
+<label for="display_text_F">Textes complets</label><br>
+</div><div class="formelement"><input type="checkbox" name="display_binary" id="display_binary" checked="checked"><label for="display_binary">Montrer le contenu binaire</label><br><input type="checkbox" name="display_blob" id="display_blob"><label for="display_blob">Montrer le contenu BLOB</label><br><input type="checkbox" name="display_binary_as_hex" id="display_binary_as_hex" checked="checked"><label for="display_binary_as_hex">Montrer le contenu binaire en hexadécimal</label></div><div class="formelement"><input type="checkbox" name="hide_transformation" id="hide_transformation"><label for="hide_transformation">Masquer les transformations</label></div><div class="formelement"><input type="radio" name="geometry_display" id="geometry_display_GEOM" value="GEOM" checked="checked">
+<label for="geometry_display_GEOM">Géométrie</label><br>
+<input type="radio" name="geometry_display" id="geometry_display_WKT" value="WKT">
+<label for="geometry_display_WKT">Well Known Text</label><br>
+<input type="radio" name="geometry_display" id="geometry_display_WKB" value="WKB">
+<label for="geometry_display_WKB">Well Known Binary</label><br>
+</div><div class="clearfloat"></div></fieldset><fieldset class="tblFooters"><input type="submit" value="Exécuter"></fieldset></div></div></form><form method="post" action="http://127.0.0.1/phpmyadmin/tbl_row_action.php" name="resultsForm" id="resultsForm" class="ajax">
+<input type="hidden" name="db" value="mydatabase"><input type="hidden" name="table" value="products"><input type="hidden" name="token" value="080907c314584056dfc44591c477a527"><input type="hidden" name="goto" value="sql.php">
+<div class="data" style="position: relative;"><div class="cRsz" style="height: 297px;"><div class="colborder" style="left: 254.312px; display: block;"></div><div class="colborder" style="left: 376.312px; display: block;"></div><div class="colborder" style="left: 423.312px; display: block;"></div><div class="colborder" style="left: 469.312px; display: block;"></div><div class="colborder" style="left: 513.312px; display: block;"></div><div class="colborder" style="left: 585.312px; display: block;"></div><div class="colborder" style="left: 826.312px; display: block;"></div><div class="colborder" style="left: 986.312px; display: block;"></div><div class="colborder" style="left: 1044.31px; display: block;"></div><div class="colborder" style="left: 1136.31px; display: block;"></div></div><table id="table_results" class="ajax pma_table">
+<thead><tr>
+                <th colspan="4"><span>
+<a href="http://127.0.0.1/phpmyadmin/sql.php?db=mydatabase&amp;table=products&amp;sql_query=SELECT+%2A+FROM+%60products%60&amp;goto=tbl_structure.php&amp;full_text_button=1&amp;display_text=F&amp;token=080907c314584056dfc44591c477a527"><img class="fulltext" src="./s_fulltext.png" alt="Textes complets" title="Textes complets"></a>
+</span></th>
+            <th class="draggable column_heading pointer marker"><span>
+<a href="http://127.0.0.1/phpmyadmin/sql.php?db=mydatabase&amp;table=products&amp;sql_query=SELECT+%2A+FROM+%60products%60%0AORDER+BY+%60products%60.%60id%60+ASC&amp;session_max_rows=30&amp;token=080907c314584056dfc44591c477a527" title="">id</a>
+</span></th><th class="draggable column_heading pointer marker" style="cursor: move;"><span>
+<a href="http://127.0.0.1/phpmyadmin/sql.php?db=mydatabase&amp;table=products&amp;sql_query=SELECT+%2A+FROM+%60products%60%0AORDER+BY+%60products%60.%60title%60+ASC&amp;session_max_rows=30&amp;token=080907c314584056dfc44591c477a527" title="">title</a>
+</span></th><th class="draggable column_heading pointer marker"><span>
+<a href="http://127.0.0.1/phpmyadmin/sql.php?db=mydatabase&amp;table=products&amp;sql_query=SELECT+%2A+FROM+%60products%60%0AORDER+BY+%60products%60.%60price%60+ASC&amp;session_max_rows=30&amp;token=080907c314584056dfc44591c477a527" title="">price</a>
+</span></th><th class="draggable column_heading pointer marker"><span>
+<a href="http://127.0.0.1/phpmyadmin/sql.php?db=mydatabase&amp;table=products&amp;sql_query=SELECT+%2A+FROM+%60products%60%0AORDER+BY+%60products%60.%60list+price%60+ASC&amp;session_max_rows=30&amp;token=080907c314584056dfc44591c477a527" title="">list price</a>
+</span></th><th class="draggable column_heading pointer marker"><span>
+<a href="http://127.0.0.1/phpmyadmin/sql.php?db=mydatabase&amp;table=products&amp;sql_query=SELECT+%2A+FROM+%60products%60%0AORDER+BY+%60products%60.%60brand%60+ASC&amp;session_max_rows=30&amp;token=080907c314584056dfc44591c477a527" title="">brand</a>
+</span></th><th class="draggable column_heading pointer marker"><span>
+<a href="http://127.0.0.1/phpmyadmin/sql.php?db=mydatabase&amp;table=products&amp;sql_query=SELECT+%2A+FROM+%60products%60%0AORDER+BY+%60products%60.%60categories%60+ASC&amp;session_max_rows=30&amp;token=080907c314584056dfc44591c477a527" title="">categories</a>
+</span></th><th class="draggable column_heading pointer marker"><span>
+<a href="http://127.0.0.1/phpmyadmin/sql.php?db=mydatabase&amp;table=products&amp;sql_query=SELECT+%2A+FROM+%60products%60%0AORDER+BY+%60products%60.%60image%60+ASC&amp;session_max_rows=30&amp;token=080907c314584056dfc44591c477a527" title="">image</a>
+</span></th><th class="draggable column_heading pointer marker"><span>
+<a href="http://127.0.0.1/phpmyadmin/sql.php?db=mydatabase&amp;table=products&amp;sql_query=SELECT+%2A+FROM+%60products%60%0AORDER+BY+%60products%60.%60description%60+ASC&amp;session_max_rows=30&amp;token=080907c314584056dfc44591c477a527" title="">description</a>
+</span></th><th class="draggable column_heading pointer marker"><span>
+<a href="http://127.0.0.1/phpmyadmin/sql.php?db=mydatabase&amp;table=products&amp;sql_query=SELECT+%2A+FROM+%60products%60%0AORDER+BY+%60products%60.%60featured%60+ASC&amp;session_max_rows=30&amp;token=080907c314584056dfc44591c477a527" title="">featured</a>
+</span></th><th class="draggable column_heading pointer marker"><span>
+<a href="http://127.0.0.1/phpmyadmin/sql.php?db=mydatabase&amp;table=products&amp;sql_query=SELECT+%2A+FROM+%60products%60%0AORDER+BY+%60products%60.%60sizes%60+ASC&amp;session_max_rows=30&amp;token=080907c314584056dfc44591c477a527" title="">sizes</a>
+</span></th></tr>
+</thead>
+        <tbody>
+<tr class="odd"><td align="center"><span><input type="checkbox" id="id_rows_to_delete0_left" name="rows_to_delete[%60products%60.%60id%60+%3D+1]" class="multi_checkbox" value="DELETE FROM `mydatabase`.`products` WHERE `products`.`id` = 1"><input type="hidden" class="condition_array" value="{&quot;`products`.`id`&quot;:&quot;= 1&quot;}">    </span></td><td class="edit_row_anchor" align="center"><span class="nowrap">
+<a href="http://127.0.0.1/phpmyadmin/tbl_change.php?db=mydatabase&amp;table=products&amp;where_clause=%60products%60.%60id%60+%3D+1&amp;clause_is_unique=1&amp;sql_query=SELECT+%2A+FROM+%60products%60&amp;goto=sql.php&amp;default_action=update&amp;token=080907c314584056dfc44591c477a527"><span class="nowrap"><img src="./dot.gif" title="Modifier" alt="Modifier" class="icon ic_b_edit"> Modifier</span></a>
+<input type="hidden" class="where_clause" value="%60products%60.%60id%60+%3D+1"></span></td><td align="center"><span class="nowrap">
+<a href="http://127.0.0.1/phpmyadmin/tbl_change.php?db=mydatabase&amp;table=products&amp;where_clause=%60products%60.%60id%60+%3D+1&amp;clause_is_unique=1&amp;sql_query=SELECT+%2A+FROM+%60products%60&amp;goto=sql.php&amp;default_action=insert&amp;token=080907c314584056dfc44591c477a527"><span class="nowrap"><img src="./dot.gif" title="Copier" alt="Copier" class="icon ic_b_insrow"> Copier</span></a>
+<input type="hidden" class="where_clause" value="%60products%60.%60id%60+%3D+1"></span></td><td align="center">
+<a href="http://127.0.0.1/phpmyadmin/sql.php?db=mydatabase&amp;table=products&amp;sql_query=DELETE+FROM+%60mydatabase%60.%60products%60+WHERE+%60products%60.%60id%60+%3D+1&amp;message_to_show=La+ligne+a+%C3%A9t%C3%A9+effac%C3%A9e&amp;goto=sql.php%3Fdb%3Dmydatabase%26table%3Dproducts%26sql_query%3DSELECT%2B%252A%2BFROM%2B%2560products%2560%26message_to_show%3DLa%2Bligne%2Ba%2B%25C3%25A9t%25C3%25A9%2Beffac%25C3%25A9e%26goto%3Dtbl_structure.php%26token%3D080907c314584056dfc44591c477a527&amp;token=080907c314584056dfc44591c477a527" onclick="return confirmLink(this, &#39;DELETE FROM `mydatabase`.`products` WHERE `products`.`id` = 1&#39;)"><span class="nowrap"><img src="./dot.gif" title="Effacer" alt="Effacer" class="icon ic_b_drop"> Effacer</span></a>
+</td><td align="right" class="data grid_edit not_null    nowrap "><span>1</span></td>
+<td class="data grid_edit not_null"><span>Levi's Jeans</span></td>
+<td class="data grid_edit not_null    "><span>29.99</span></td>
+<td class="data grid_edit not_null    "><span>39.99</span></td>
+<td align="right" class="data grid_edit not_null    nowrap "><span>1</span></td>
+<td class="data grid_edit not_null    "><span>6</span></td>
+<td class="data grid_edit not_null    "><span>/ecomm/images/products/men4.png</span></td>
+<td align="left" class="data grid_edit not_null    truncated"><span>Our five pocket jeggings are made from super soft ...</span></td><td align="right" class="data grid_edit not_null    nowrap "><span>1</span></td>
+<td align="left" class="data grid_edit not_null   "><span>S:4,M:5,XL:7</span></td></tr>
+            
+<tr class="even"><td align="center"><span><input type="checkbox" id="id_rows_to_delete1_left" name="rows_to_delete[%60products%60.%60id%60+%3D+2]" class="multi_checkbox" value="DELETE FROM `mydatabase`.`products` WHERE `products`.`id` = 2"><input type="hidden" class="condition_array" value="{&quot;`products`.`id`&quot;:&quot;= 2&quot;}">    </span></td><td class="edit_row_anchor" align="center"><span class="nowrap">
+<a href="http://127.0.0.1/phpmyadmin/tbl_change.php?db=mydatabase&amp;table=products&amp;where_clause=%60products%60.%60id%60+%3D+2&amp;clause_is_unique=1&amp;sql_query=SELECT+%2A+FROM+%60products%60&amp;goto=sql.php&amp;default_action=update&amp;token=080907c314584056dfc44591c477a527"><span class="nowrap"><img src="./dot.gif" title="Modifier" alt="Modifier" class="icon ic_b_edit"> Modifier</span></a>
+<input type="hidden" class="where_clause" value="%60products%60.%60id%60+%3D+2"></span></td><td align="center"><span class="nowrap">
+<a href="http://127.0.0.1/phpmyadmin/tbl_change.php?db=mydatabase&amp;table=products&amp;where_clause=%60products%60.%60id%60+%3D+2&amp;clause_is_unique=1&amp;sql_query=SELECT+%2A+FROM+%60products%60&amp;goto=sql.php&amp;default_action=insert&amp;token=080907c314584056dfc44591c477a527"><span class="nowrap"><img src="./dot.gif" title="Copier" alt="Copier" class="icon ic_b_insrow"> Copier</span></a>
+<input type="hidden" class="where_clause" value="%60products%60.%60id%60+%3D+2"></span></td><td align="center">
+<a href="http://127.0.0.1/phpmyadmin/sql.php?db=mydatabase&amp;table=products&amp;sql_query=DELETE+FROM+%60mydatabase%60.%60products%60+WHERE+%60products%60.%60id%60+%3D+2&amp;message_to_show=La+ligne+a+%C3%A9t%C3%A9+effac%C3%A9e&amp;goto=sql.php%3Fdb%3Dmydatabase%26table%3Dproducts%26sql_query%3DSELECT%2B%252A%2BFROM%2B%2560products%2560%26message_to_show%3DLa%2Bligne%2Ba%2B%25C3%25A9t%25C3%25A9%2Beffac%25C3%25A9e%26goto%3Dtbl_structure.php%26token%3D080907c314584056dfc44591c477a527&amp;token=080907c314584056dfc44591c477a527" onclick="return confirmLink(this, &#39;DELETE FROM `mydatabase`.`products` WHERE `products`.`id` = 2&#39;)"><span class="nowrap"><img src="./dot.gif" title="Effacer" alt="Effacer" class="icon ic_b_drop"> Effacer</span></a>
+</td><td align="right" class="data grid_edit not_null    nowrap "><span>2</span></td>
+<td class="data grid_edit not_null"><span>Bacon Shirt</span></td>
+<td class="data grid_edit not_null    "><span>19.99</span></td>
+<td class="data grid_edit not_null    "><span>28.99</span></td>
+<td align="right" class="data grid_edit not_null    nowrap "><span>1</span></td>
+<td class="data grid_edit not_null    "><span>5</span></td>
+<td class="data grid_edit not_null    "><span>/ecomm/images/products/menshirt1.png</span></td>
+<td align="left" class="data grid_edit not_null    truncated"><span>Bring home the bacon in this casual crew neck t-sh...</span></td><td align="right" class="data grid_edit not_null    nowrap "><span>1</span></td>
+<td align="left" class="data grid_edit not_null   "><span>S:9,M:6,XL:1</span></td></tr>
+            
+<tr class="odd"><td align="center"><span><input type="checkbox" id="id_rows_to_delete2_left" name="rows_to_delete[%60products%60.%60id%60+%3D+3]" class="multi_checkbox" value="DELETE FROM `mydatabase`.`products` WHERE `products`.`id` = 3"><input type="hidden" class="condition_array" value="{&quot;`products`.`id`&quot;:&quot;= 3&quot;}">    </span></td><td class="edit_row_anchor" align="center"><span class="nowrap">
+<a href="http://127.0.0.1/phpmyadmin/tbl_change.php?db=mydatabase&amp;table=products&amp;where_clause=%60products%60.%60id%60+%3D+3&amp;clause_is_unique=1&amp;sql_query=SELECT+%2A+FROM+%60products%60&amp;goto=sql.php&amp;default_action=update&amp;token=080907c314584056dfc44591c477a527"><span class="nowrap"><img src="./dot.gif" title="Modifier" alt="Modifier" class="icon ic_b_edit"> Modifier</span></a>
+<input type="hidden" class="where_clause" value="%60products%60.%60id%60+%3D+3"></span></td><td align="center"><span class="nowrap">
+<a href="http://127.0.0.1/phpmyadmin/tbl_change.php?db=mydatabase&amp;table=products&amp;where_clause=%60products%60.%60id%60+%3D+3&amp;clause_is_unique=1&amp;sql_query=SELECT+%2A+FROM+%60products%60&amp;goto=sql.php&amp;default_action=insert&amp;token=080907c314584056dfc44591c477a527"><span class="nowrap"><img src="./dot.gif" title="Copier" alt="Copier" class="icon ic_b_insrow"> Copier</span></a>
+<input type="hidden" class="where_clause" value="%60products%60.%60id%60+%3D+3"></span></td><td align="center">
+<a href="http://127.0.0.1/phpmyadmin/sql.php?db=mydatabase&amp;table=products&amp;sql_query=DELETE+FROM+%60mydatabase%60.%60products%60+WHERE+%60products%60.%60id%60+%3D+3&amp;message_to_show=La+ligne+a+%C3%A9t%C3%A9+effac%C3%A9e&amp;goto=sql.php%3Fdb%3Dmydatabase%26table%3Dproducts%26sql_query%3DSELECT%2B%252A%2BFROM%2B%2560products%2560%26message_to_show%3DLa%2Bligne%2Ba%2B%25C3%25A9t%25C3%25A9%2Beffac%25C3%25A9e%26goto%3Dtbl_structure.php%26token%3D080907c314584056dfc44591c477a527&amp;token=080907c314584056dfc44591c477a527" onclick="return confirmLink(this, &#39;DELETE FROM `mydatabase`.`products` WHERE `products`.`id` = 3&#39;)"><span class="nowrap"><img src="./dot.gif" title="Effacer" alt="Effacer" class="icon ic_b_drop"> Effacer</span></a>
+</td><td align="right" class="data grid_edit not_null    nowrap "><span>3</span></td>
+<td class="data grid_edit not_null"><span>Batman T-Shirt</span></td>
+<td class="data grid_edit not_null    "><span>21.99</span></td>
+<td class="data grid_edit not_null    "><span>35.99</span></td>
+<td align="right" class="data grid_edit not_null    nowrap "><span>1</span></td>
+<td class="data grid_edit not_null    "><span>5</span></td>
+<td class="data grid_edit not_null    "><span>/ecomm/images/products/menshirt2.png</span></td>
+<td align="left" class="data grid_edit not_null    truncated"><span>Ideal for everyday casual wear, this fun t-shirt s...</span></td><td align="right" class="data grid_edit not_null    nowrap "><span>1</span></td>
+<td align="left" class="data grid_edit not_null   "><span>S:3,M:4,XL:1</span></td></tr>
+            
+<tr class="even"><td align="center"><span><input type="checkbox" id="id_rows_to_delete3_left" name="rows_to_delete[%60products%60.%60id%60+%3D+4]" class="multi_checkbox" value="DELETE FROM `mydatabase`.`products` WHERE `products`.`id` = 4"><input type="hidden" class="condition_array" value="{&quot;`products`.`id`&quot;:&quot;= 4&quot;}">    </span></td><td class="edit_row_anchor" align="center"><span class="nowrap">
+<a href="http://127.0.0.1/phpmyadmin/tbl_change.php?db=mydatabase&amp;table=products&amp;where_clause=%60products%60.%60id%60+%3D+4&amp;clause_is_unique=1&amp;sql_query=SELECT+%2A+FROM+%60products%60&amp;goto=sql.php&amp;default_action=update&amp;token=080907c314584056dfc44591c477a527"><span class="nowrap"><img src="./dot.gif" title="Modifier" alt="Modifier" class="icon ic_b_edit"> Modifier</span></a>
+<input type="hidden" class="where_clause" value="%60products%60.%60id%60+%3D+4"></span></td><td align="center"><span class="nowrap">
+<a href="http://127.0.0.1/phpmyadmin/tbl_change.php?db=mydatabase&amp;table=products&amp;where_clause=%60products%60.%60id%60+%3D+4&amp;clause_is_unique=1&amp;sql_query=SELECT+%2A+FROM+%60products%60&amp;goto=sql.php&amp;default_action=insert&amp;token=080907c314584056dfc44591c477a527"><span class="nowrap"><img src="./dot.gif" title="Copier" alt="Copier" class="icon ic_b_insrow"> Copier</span></a>
+<input type="hidden" class="where_clause" value="%60products%60.%60id%60+%3D+4"></span></td><td align="center">
+<a href="http://127.0.0.1/phpmyadmin/sql.php?db=mydatabase&amp;table=products&amp;sql_query=DELETE+FROM+%60mydatabase%60.%60products%60+WHERE+%60products%60.%60id%60+%3D+4&amp;message_to_show=La+ligne+a+%C3%A9t%C3%A9+effac%C3%A9e&amp;goto=sql.php%3Fdb%3Dmydatabase%26table%3Dproducts%26sql_query%3DSELECT%2B%252A%2BFROM%2B%2560products%2560%26message_to_show%3DLa%2Bligne%2Ba%2B%25C3%25A9t%25C3%25A9%2Beffac%25C3%25A9e%26goto%3Dtbl_structure.php%26token%3D080907c314584056dfc44591c477a527&amp;token=080907c314584056dfc44591c477a527" onclick="return confirmLink(this, &#39;DELETE FROM `mydatabase`.`products` WHERE `products`.`id` = 4&#39;)"><span class="nowrap"><img src="./dot.gif" title="Effacer" alt="Effacer" class="icon ic_b_drop"> Effacer</span></a>
+</td><td align="right" class="data grid_edit not_null    nowrap "><span>4</span></td>
+<td class="data grid_edit not_null"><span>Captain America Shield T-Shirt</span></td>
+<td class="data grid_edit not_null    "><span>21.99</span></td>
+<td class="data grid_edit not_null    "><span>35.99</span></td>
+<td align="right" class="data grid_edit not_null    nowrap "><span>1</span></td>
+<td class="data grid_edit not_null    "><span>5</span></td>
+<td class="data grid_edit not_null    "><span>/ecomm/images/products/menshirt3.png</span></td>
+<td align="left" class="data grid_edit not_null    truncated"><span>Ideal for laid-back weekend fun, this short-sleeve...</span></td><td align="right" class="data grid_edit not_null    nowrap "><span>1</span></td>
+<td align="left" class="data grid_edit not_null   "><span>S:3,M:4,XL:10</span></td></tr>
+            
+<tr class="odd"><td align="center"><span><input type="checkbox" id="id_rows_to_delete4_left" name="rows_to_delete[%60products%60.%60id%60+%3D+6]" class="multi_checkbox" value="DELETE FROM `mydatabase`.`products` WHERE `products`.`id` = 6"><input type="hidden" class="condition_array" value="{&quot;`products`.`id`&quot;:&quot;= 6&quot;}">    </span></td><td class="edit_row_anchor" align="center"><span class="nowrap">
+<a href="http://127.0.0.1/phpmyadmin/tbl_change.php?db=mydatabase&amp;table=products&amp;where_clause=%60products%60.%60id%60+%3D+6&amp;clause_is_unique=1&amp;sql_query=SELECT+%2A+FROM+%60products%60&amp;goto=sql.php&amp;default_action=update&amp;token=080907c314584056dfc44591c477a527"><span class="nowrap"><img src="./dot.gif" title="Modifier" alt="Modifier" class="icon ic_b_edit"> Modifier</span></a>
+<input type="hidden" class="where_clause" value="%60products%60.%60id%60+%3D+6"></span></td><td align="center"><span class="nowrap">
+<a href="http://127.0.0.1/phpmyadmin/tbl_change.php?db=mydatabase&amp;table=products&amp;where_clause=%60products%60.%60id%60+%3D+6&amp;clause_is_unique=1&amp;sql_query=SELECT+%2A+FROM+%60products%60&amp;goto=sql.php&amp;default_action=insert&amp;token=080907c314584056dfc44591c477a527"><span class="nowrap"><img src="./dot.gif" title="Copier" alt="Copier" class="icon ic_b_insrow"> Copier</span></a>
+<input type="hidden" class="where_clause" value="%60products%60.%60id%60+%3D+6"></span></td><td align="center">
+<a href="http://127.0.0.1/phpmyadmin/sql.php?db=mydatabase&amp;table=products&amp;sql_query=DELETE+FROM+%60mydatabase%60.%60products%60+WHERE+%60products%60.%60id%60+%3D+6&amp;message_to_show=La+ligne+a+%C3%A9t%C3%A9+effac%C3%A9e&amp;goto=sql.php%3Fdb%3Dmydatabase%26table%3Dproducts%26sql_query%3DSELECT%2B%252A%2BFROM%2B%2560products%2560%26message_to_show%3DLa%2Bligne%2Ba%2B%25C3%25A9t%25C3%25A9%2Beffac%25C3%25A9e%26goto%3Dtbl_structure.php%26token%3D080907c314584056dfc44591c477a527&amp;token=080907c314584056dfc44591c477a527" onclick="return confirmLink(this, &#39;DELETE FROM `mydatabase`.`products` WHERE `products`.`id` = 6&#39;)"><span class="nowrap"><img src="./dot.gif" title="Effacer" alt="Effacer" class="icon ic_b_drop"> Effacer</span></a>
+</td><td align="right" class="data grid_edit not_null    nowrap "><span>6</span></td>
+<td class="data grid_edit not_null"><span>skan</span></td>
+<td class="data grid_edit not_null    "><span>25.00</span></td>
+<td class="data grid_edit not_null    "><span>23.00</span></td>
+<td align="right" class="data grid_edit not_null    nowrap "><span>1</span></td>
+<td class="data grid_edit not_null    "><span>5</span></td>
+<td class="data grid_edit not_null    "><span>/ecomm/images/products/men1.png</span></td>
+<td align="left" class="data grid_edit not_null   "><span>fgdfgdf gdfgfdg fdg fdg f</span></td><td align="right" class="data grid_edit not_null    nowrap "><span>1</span></td>
+<td align="left" class="data grid_edit not_null   "><span>S:4 , M:0, XL :5</span></td></tr>
+            
+<tr class="even"><td align="center"><span><input type="checkbox" id="id_rows_to_delete5_left" name="rows_to_delete[%60products%60.%60id%60+%3D+7]" class="multi_checkbox" value="DELETE FROM `mydatabase`.`products` WHERE `products`.`id` = 7"><input type="hidden" class="condition_array" value="{&quot;`products`.`id`&quot;:&quot;= 7&quot;}">    </span></td><td class="edit_row_anchor" align="center"><span class="nowrap">
+<a href="http://127.0.0.1/phpmyadmin/tbl_change.php?db=mydatabase&amp;table=products&amp;where_clause=%60products%60.%60id%60+%3D+7&amp;clause_is_unique=1&amp;sql_query=SELECT+%2A+FROM+%60products%60&amp;goto=sql.php&amp;default_action=update&amp;token=080907c314584056dfc44591c477a527"><span class="nowrap"><img src="./dot.gif" title="Modifier" alt="Modifier" class="icon ic_b_edit"> Modifier</span></a>
+<input type="hidden" class="where_clause" value="%60products%60.%60id%60+%3D+7"></span></td><td align="center"><span class="nowrap">
+<a href="http://127.0.0.1/phpmyadmin/tbl_change.php?db=mydatabase&amp;table=products&amp;where_clause=%60products%60.%60id%60+%3D+7&amp;clause_is_unique=1&amp;sql_query=SELECT+%2A+FROM+%60products%60&amp;goto=sql.php&amp;default_action=insert&amp;token=080907c314584056dfc44591c477a527"><span class="nowrap"><img src="./dot.gif" title="Copier" alt="Copier" class="icon ic_b_insrow"> Copier</span></a>
+<input type="hidden" class="where_clause" value="%60products%60.%60id%60+%3D+7"></span></td><td align="center">
+<a href="http://127.0.0.1/phpmyadmin/sql.php?db=mydatabase&amp;table=products&amp;sql_query=DELETE+FROM+%60mydatabase%60.%60products%60+WHERE+%60products%60.%60id%60+%3D+7&amp;message_to_show=La+ligne+a+%C3%A9t%C3%A9+effac%C3%A9e&amp;goto=sql.php%3Fdb%3Dmydatabase%26table%3Dproducts%26sql_query%3DSELECT%2B%252A%2BFROM%2B%2560products%2560%26message_to_show%3DLa%2Bligne%2Ba%2B%25C3%25A9t%25C3%25A9%2Beffac%25C3%25A9e%26goto%3Dtbl_structure.php%26token%3D080907c314584056dfc44591c477a527&amp;token=080907c314584056dfc44591c477a527"><span class="nowrap"><img src="./dot.gif" title="Effacer" alt="Effacer" class="icon ic_b_drop"> Effacer</span></a>
+</td><td align="right" class="data grid_edit not_null    nowrap "><span>7</span></td>
+<td class="data grid_edit not_null"><span>gkln</span></td>
+<td class="data grid_edit not_null    "><span>548.00</span></td>
+<td class="data grid_edit not_null    "><span>16.00</span></td>
+<td align="right" class="data grid_edit not_null    nowrap "><span>0</span></td>
+<td class="data grid_edit not_null    "><span>4</span></td>
+<td class="data grid_edit not_null"><span>/ecomm/images/products/men1.png</span></td>
+<td align="left" class="data grid_edit not_null   "><span>fdgfd</span></td><td align="right" class="data grid_edit not_null    nowrap "><span>1</span></td>
+<td align="left" class="data grid_edit not_null   "><span>M:4 , XL:8 , S:70</span></td></tr>
+            
+</tbody>
+</table><div class="cPointer" style="visibility: hidden;"></div><div class="cCpy" style="display: none;"></div><div class="cDrop"><div class="coldrop" style="left: 206.816px; top: -1.312px;"></div></div><div class="cList" style="display: none;"><div class="lDiv"><div><input type="checkbox" checked="checked">
+id
+</div><div><input type="checkbox" checked="checked">
+title
+</div><div><input type="checkbox" checked="checked">
+price
+</div><div><input type="checkbox" checked="checked">
+list price
+</div><div><input type="checkbox" checked="checked">
+brand
+</div><div><input type="checkbox" checked="checked">
+categories
+</div><div><input type="checkbox" checked="checked">
+image
+</div><div><input type="checkbox" checked="checked">
+description
+</div><div><input type="checkbox" checked="checked">
+featured
+</div><div><input type="checkbox" checked="checked">
+sizes
+</div></div><div class="showAllColBtn">Tout afficher</div></div><div class="cEdit" style="top: 261px; left: 584px; display: block;"><textarea class="edit_box" rows="1" style="width: 241px; height: 36px;"></textarea><div class="edit_area" style="display: none;"></div></div></div>
+
+    <img class="selectallarrow" width="38" height="22" src="./arrow_ltr.png" alt="Pour la sélection : ">
+<a href="http://127.0.0.1/phpmyadmin/sql.php?db=mydatabase&amp;table=products&amp;sql_query=SELECT+%2A+FROM+%60products%60&amp;goto=tbl_structure.php&amp;checkall=1&amp;token=080907c314584056dfc44591c477a527" onclick="if (markAllRows(&#39;resultsForm&#39;)) return false;">Tout cocher</a>
+
+ / 
+
+<a href="http://127.0.0.1/phpmyadmin/sql.php?db=mydatabase&amp;table=products&amp;sql_query=SELECT+%2A+FROM+%60products%60&amp;goto=tbl_structure.php&amp;token=080907c314584056dfc44591c477a527" onclick="if (unMarkAllRows(&#39;resultsForm&#39;)) return false;">Tout décocher</a>
+
+<i>Pour la sélection : </i>
+<button class="mult_submit" type="submit" name="submit_mult" value="edit" title="Modifier">
+<span class="nowrap"><img src="./dot.gif" title="Modifier" alt="Modifier" class="icon ic_b_edit"> Modifier</span></button>
+<button class="mult_submit" type="submit" name="submit_mult" value="delete" title="Effacer">
+<span class="nowrap"><img src="./dot.gif" title="Effacer" alt="Effacer" class="icon ic_b_drop"> Effacer</span></button>
+<button class="mult_submit" type="submit" name="submit_mult" value="export" title="Exporter">
+<span class="nowrap"><img src="./dot.gif" title="Exporter" alt="Exporter" class="icon ic_b_tblexport"> Exporter</span></button>
+
+<input type="hidden" name="sql_query" value="SELECT * FROM `products`">
+<input type="hidden" name="url_query" value="db=mydatabase&amp;table=products&amp;token=080907c314584056dfc44591c477a527&amp;goto=tbl_sql.php&amp;back=tbl_sql.php">
+<input type="hidden" name="clause_is_unique" value="1">
+</form>
+<br>
+
+<!-- Navigation bar -->
+<table border="0" cellpadding="0" cellspacing="0" class="navigation">
+<tbody><tr>
+    <td class="navigation_separator"></td>
+        <td>
+        <div class="save_edited hide" style="display: none;">
+            <input type="submit" value="Sauvegarder les données modifiées">
+            <div class="navigation_separator">|</div>
+        </div>
+    </td>
+    <td>
+        <div class="restore_column hide" style="display: none;">
+            <input type="submit" value="Restaurer l&#39;ordre des colonnes">
+            <div class="navigation_separator">|</div>
+        </div>
+    </td>
+
+    <td class="navigation_goto">
+        <form action="http://127.0.0.1/phpmyadmin/sql.php" method="post" onsubmit="return (checkFormElementInRange(this, &#39;session_max_rows&#39;, &#39;%d n\&#39;est pas un numéro de ligne valable.&#39;, 1) &amp;&amp; checkFormElementInRange(this, &#39;pos&#39;, &#39;%d n\&#39;est pas un numéro de ligne valable.&#39;, 0-1))">
+            <input type="hidden" name="db" value="mydatabase"><input type="hidden" name="table" value="products"><input type="hidden" name="token" value="080907c314584056dfc44591c477a527">            <input type="hidden" name="sql_query" value="SELECT * FROM `products`">
+            <input type="hidden" name="goto" value="tbl_structure.php">
+            <input type="submit" name="navig" class="ajax" value="Afficher :">
+            Ligne de départ: 
+            <input type="text" name="pos" size="3" value="0" class="textfield" onfocus="this.select()">
+            Nombre de lignes: 
+            <input type="text" name="session_max_rows" size="3" value="30" class="textfield" onfocus="this.select()">
+        En-têtes à chaque <input type="text" size="3" name="repeat_cells" value="100" class="textfield"> ligne
+        </form>
+    </td>
+    <td class="navigation_separator"></td>
+</tr>
+</tbody></table>
+
+    <fieldset><legend>Opérations sur les résultats de la requête</legend>
+<a href="http://127.0.0.1/phpmyadmin/sql.php?db=mydatabase&amp;table=products&amp;printview=1&amp;sql_query=SELECT+%2A+FROM+%60products%60&amp;token=080907c314584056dfc44591c477a527" target="print_view"><span class="nowrap"><img src="./dot.gif" title="Version imprimable" alt="Version imprimable" class="icon ic_b_print"> Version imprimable</span></a>
+
+
+<a href="http://127.0.0.1/phpmyadmin/sql.php?db=mydatabase&amp;table=products&amp;printview=1&amp;sql_query=SELECT+%2A+FROM+%60products%60&amp;display_text=F&amp;token=080907c314584056dfc44591c477a527" target="print_view"><span class="nowrap"><img src="./dot.gif" title="Version imprimable (avec textes complets)" alt="Version imprimable (avec textes complets)" class="icon ic_b_print"> Version imprimable (avec textes complets)</span></a>
+
+
+<a href="http://127.0.0.1/phpmyadmin/tbl_export.php?db=mydatabase&amp;table=products&amp;printview=1&amp;sql_query=SELECT+%2A+FROM+%60products%60&amp;single_table=true&amp;unlim_num_rows=6&amp;token=080907c314584056dfc44591c477a527"><span class="nowrap"><img src="./dot.gif" title="Exporter" alt="Exporter" class="icon ic_b_tblexport"> Exporter</span></a>
+
+
+<a href="http://127.0.0.1/phpmyadmin/tbl_chart.php?db=mydatabase&amp;table=products&amp;printview=1&amp;sql_query=SELECT+%2A+FROM+%60products%60&amp;single_table=true&amp;unlim_num_rows=6&amp;token=080907c314584056dfc44591c477a527"><span class="nowrap"><img src="./dot.gif" title="Afficher le graphique" alt="Afficher le graphique" class="icon ic_b_chart"> Afficher le graphique</span></a>
+
+
+<a href="http://127.0.0.1/phpmyadmin/view_create.php?db=mydatabase&amp;table=products&amp;printview=1&amp;sql_query=SELECT+%2A+FROM+%60products%60&amp;token=080907c314584056dfc44591c477a527"><span class="nowrap"><img src="./dot.gif" title="Créer une vue" alt="Créer une vue" class="icon ic_b_views"> Créer une vue</span></a>
+
+</fieldset><br></div><div class="footnotes" style="display: none; border: none; padding: 0px;"><span id="footnote_1"> Peut être approximatif. Voir <a href="http://127.0.0.1/phpmyadmin/Documentation.html#faq3_11" target="Documentation">FAQ 3.11</a></span><br></div><script type="text/javascript">
+//<![CDATA[
+$(document).ready(function() {
+// updates current settings
+if (window.parent.setAll) {
+    window.parent.setAll('fr', 'utf8mb4_unicode_ci', '1', 'mydatabase', 'products', '080907c314584056dfc44591c477a527');
+}
+    // set current db, table and sql query in the querywindow
+if (window.parent.reload_querywindow) {
+    window.parent.reload_querywindow(
+        'mydatabase',
+        'products',
+        '');
+}
+    
+if (window.parent.frame_content) {
+    // reset content frame name, as querywindow needs to set a unique name
+    // before submitting form data, and navigation frame needs the original name
+    if (typeof(window.parent.frame_content.name) != 'undefined'
+     && window.parent.frame_content.name != 'frame_content') {
+        window.parent.frame_content.name = 'frame_content';
+    }
+    if (typeof(window.parent.frame_content.id) != 'undefined'
+     && window.parent.frame_content.id != 'frame_content') {
+        window.parent.frame_content.id = 'frame_content';
+    }
+    //window.parent.frame_content.setAttribute('name', 'frame_content');
+    //window.parent.frame_content.setAttribute('id', 'frame_content');
+}
+});
+
+//]]>
+</script>
+<div id="selflink" class="print_ignore">
+<script type="text/javascript">
+//<![CDATA[
+
+/* Store current location in hash part of URL to allow direct bookmarking */
+setURLHash("db=mydatabase&table=products&target=sql.php&token=080907c314584056dfc44591c477a527");
+
+//]]>
+</script>
+<a href="http://127.0.0.1/phpmyadmin/index.php?db=mydatabase&amp;table=products&amp;target=sql.php&amp;token=080907c314584056dfc44591c477a527" title="Ouvrir une nouvelle fenêtre phpMyAdmin" target="_blank"><img src="./dot.gif" title="Ouvrir une nouvelle fenêtre phpMyAdmin" alt="Ouvrir une nouvelle fenêtre phpMyAdmin" class="icon ic_window-new"></a>
+</div>
+
+
+<div qtip="1" class="qtip normalqTip qtip-active" style="border-radius: 0px; position: absolute; width: 188px; display: none; left: 165px; top: 366px;">  <div class="qtip-wrapper" style="position: relative; overflow: hidden; text-align: left; width: auto;">    <div class="qtip-contentWrapper" style="overflow: hidden; border: 3px solid rgb(48, 48, 48); background: rgb(80, 80, 80);">       <div class="qtip-content normalqTipContent" style="color: rgb(243, 243, 243); overflow: hidden; text-align: left; padding: 5px 9px; background: rgb(80, 80, 80);">Cliquer sur la flèche<br>pour gérer l'affichage des colonnes</div></div></div></div><mytubeelement id="myTubeRelayElementToPage" event="preferencesUpdated" data="{&quot;bundle&quot;:{&quot;label_delimitor&quot;:&quot;:&quot;,&quot;percentage&quot;:&quot;%&quot;,&quot;smart_buffer&quot;:&quot;Smart Buffer&quot;,&quot;start_playing_when_buffered&quot;:&quot;Start playing when buffered&quot;,&quot;sound&quot;:&quot;Sound&quot;,&quot;desktop_notification&quot;:&quot;Desktop Notification&quot;,&quot;continuation_on_next_line&quot;:&quot;-&quot;,&quot;loop&quot;:&quot;Loop&quot;,&quot;only_notify&quot;:&quot;Only Notify&quot;,&quot;estimated_time&quot;:&quot;Estimated Time&quot;,&quot;global_preferences&quot;:&quot;Global Preferences&quot;,&quot;no_notification_supported_on_your_browser&quot;:&quot;No notification style supported on your browser version&quot;,&quot;video_buffered&quot;:&quot;Video Buffered&quot;,&quot;buffered&quot;:&quot;Buffered&quot;,&quot;hyphen&quot;:&quot;-&quot;,&quot;buffered_message&quot;:&quot;The video has been buffered as requested and is ready to play.&quot;,&quot;not_supported&quot;:&quot;Not Supported&quot;,&quot;on&quot;:&quot;On&quot;,&quot;off&quot;:&quot;Off&quot;,&quot;click_to_enable_for_this_site&quot;:&quot;Click to enable for this site&quot;,&quot;desktop_notification_denied&quot;:&quot;You have denied permission for desktop notification for this site&quot;,&quot;notification_status_delimitor&quot;:&quot;;&quot;,&quot;error&quot;:&quot;Error&quot;,&quot;adblock_interferance_message&quot;:&quot;Adblock (or similar extension) is known to interfere with SmartVideo. Please add this url to adblock whitelist.&quot;,&quot;calculating&quot;:&quot;Calculating&quot;,&quot;waiting&quot;:&quot;Waiting&quot;,&quot;will_start_buffering_when_initialized&quot;:&quot;Will start buffering when initialized&quot;,&quot;will_start_playing_when_initialized&quot;:&quot;Will start playing when initialized&quot;,&quot;completed&quot;:&quot;Completed&quot;,&quot;buffering_stalled&quot;:&quot;Buffering is stalled. Will stop.&quot;,&quot;stopped&quot;:&quot;Stopped&quot;,&quot;hr&quot;:&quot;Hr&quot;,&quot;min&quot;:&quot;Min&quot;,&quot;sec&quot;:&quot;Sec&quot;,&quot;any_moment&quot;:&quot;Any Moment&quot;,&quot;popup_donate_to&quot;:&quot;Donate to&quot;,&quot;extension_id&quot;:&quot;lnkdbjbjpnpjeciipoaflmpcddinpjjp&quot;},&quot;prefs&quot;:{&quot;desktopNotification&quot;:true,&quot;soundNotification&quot;:true,&quot;logLevel&quot;:0,&quot;enable&quot;:true,&quot;loop&quot;:false,&quot;hidePopup&quot;:false,&quot;autoPlay&quot;:false,&quot;autoBuffer&quot;:false,&quot;autoPlayOnBuffer&quot;:false,&quot;autoPlayOnBufferPercentage&quot;:42,&quot;autoPlayOnSmartBuffer&quot;:true,&quot;quality&quot;:&quot;default&quot;,&quot;fshd&quot;:false,&quot;onlyNotification&quot;:false,&quot;enableFullScreen&quot;:true,&quot;saveBandwidth&quot;:false,&quot;hideAnnotations&quot;:false,&quot;turnOffPagedBuffering&quot;:false}}"></mytubeelement><mytubeelement id="myTubeRelayElementToTab" event="relayPrefs" data="{&quot;loadBundle&quot;:true}"></mytubeelement><div qtip="9" class="qtip normalqTip qtip-active" style="border-radius: 0px; position: absolute; width: 224px; display: none; left: 335px; top: 364px;">  <div class="qtip-wrapper" style="position: relative; overflow: hidden; text-align: left; width: auto;">    <div class="qtip-contentWrapper" style="overflow: hidden; border: 3px solid rgb(48, 48, 48); background: rgb(80, 80, 80);">       <div class="qtip-content normalqTipContent" style="color: rgb(243, 243, 243); overflow: hidden; text-align: left; padding: 5px 9px; background: rgb(80, 80, 80);">Faire glisser pour réordonner<br>Cliquer pour marquer/enlever les marques</div></div></div></div></body></html>
